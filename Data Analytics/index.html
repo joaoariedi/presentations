@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="pt">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Data Analytics</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	
+	<body>
+		<!------------------------------- START PRESENTATION ------------------------------->
+		<div class="reveal">
+			<div class="slides">
+
+				<!------------------------------- JOÃO ------------------------------->
+
+				<section id="slide1" data-background="img/networksd.gif">
+					<h1>Data Analytics</h1>
+					<h2>Com quantos dados se faz uma informação?</h2>
+
+					<aside class="notes">
+						Podemos adicionar notas para o modo de apresentação.
+					</aside>
+				</section>
+
+				<section id="slide2" data-background="img/retro.jpg" >
+					<strong>João Ariedi</strong><br>
+					<small>www.ariedi.com.br</small>
+					<p>
+						<strong>Gerente de inteligência</strong><br>
+						<small>Scaffold Education, Bauru-SP</small><br>
+					</p>
+					
+					<p>
+						<strong>Senior data engineer</strong><br>
+						<small>Turing, Palo Alto-CA</small><br>
+					</p>
+				</section>
+
+
+				<section id="slide3" data-background="img/hanging.jpg">
+					<h2>Assuntos</h2>
+					<ol style="width: 80%;">
+						<li>Quais informações eu quero?</li>
+						<li>De quais dados eu preciso?</li>
+						<li>Onde estes dados são coletados?</li>
+						<li>Como organizo esses dados?</li>
+						<li>Como armazeno estes dados?</li>
+						<li>Preciso transformar os dados?</li>
+						<li>Como vou expor esses dados?</li>
+						<li>Análise exploratória X explanatória</li>
+					</ol>
+				</section>
+
+				<section id="slide4">
+					<h2>Dados</h2>
+					<p style="background-color: rgb(0,0,0, 0.5);">Conjuntos de valores armazenados simbolicamente como pontos num espaço multidimensional não-euclidiano. o.O</p>
+					<span class="fragment fade-up"><img src="img/obama.gif" style="width: 40%;"></span>
+				</section>
+
+				<section id="slide5">
+					<h2>Informações</h2>
+					<p><strong>Dados interpretados</strong> por um <strong>sistema cognitivo</strong> e que permitem a <strong>tomada de decisões</strong> num dado fluxo de eventos.</p>
+					<span style="display: inline-block;" class="fragment fade-down">
+						Mas só isso?<br>
+						<img src="img/dog.gif" style="width: 90%;">
+					</span>
+				</section>
+
+				<section id="slide6">
+					<h2>Teoria da Informação</h2>
+					<p><strong>Propriedades estatísticas</strong> de um dado sistema e as <strong>correlações</strong> entre os estados de dois sistemas, independentemente dos significados e qualquer conteúdo semântico destes estados.</p>
+					<img src="img/shannon.jpg">
+					<img src="img/weaver.jpg">
+					<p>Shannon e Weaver</p>
+				</section>
+
+				<section id="slide7"  data-background="img/data.jpeg">
+					<h3>Quais informações eu quero?</h3>
+				</section>
+
+
+				<section id="slide8">
+					<ol style="width: 80%;">
+						<li>Indicadores de resultado</li>
+						<li>Indicadores chave de resultado</li>
+						<li>Indicadores de performance</li>
+						<li>Indicadores chave de performance</li>
+						<li>OKR: Milestone, valor, qualidade, eficiência</li>
+					</ol>				
+				</section>
+
+				<section id="slide9"  data-background="img/matrix2.gif">
+					<h3>De quais dados eu preciso?</h3>
+				</section>
+
+
+				<section id="slide10">
+					<ol style="width: 80%;">
+						<li>Benchmark</li>
+						<li>Bigdata</li>
+						<li>Cadastros</li>
+						<li>Logs</li>
+						<li>Clicks</li>
+					</ol>				
+				</section>
+
+				<section id="slide11"  data-background="img/retro3.jpg">
+					<h3>Onde estes dados são coletados?</h3>
+				</section>
+
+				<section id="slide12">
+					<h3>Sistemas transacionais</h3>
+					<ol style="width: 80%;">
+						<li>CRM</li>
+						<li>Marketing Platforms</li>
+						<li>Forms</li>
+						<li>ERP</li>
+						<li>Helpdesk</li>
+						<li>Google Analytics</li>
+					</ol>				
+				</section>
+
+
+
+				<section id="slide13"  data-background="img/colorcube.gif">
+					<h3>Como organizo esses dados?</h3>
+				</section>
+				
+				<section id="slide14">
+					<ol style="width: 80%;">
+						<li>Dataframes</li>
+						<li>Modelagem de dados</li>
+						<li>Cubos e n-dimensões</li>
+					</ol>				
+				</section>
+
+				<section id="slide15"  data-background="img/database.gif">
+					<h3>Como armazenamos estes dados?</h3>
+				</section>
+
+				<section id="slide16">
+					<section>
+						<h3>Storage</h3>
+						<ol style="width: 80%;">
+							<li>Planilhas</li>
+							<li>Bancos de dados</li>
+							<li>Repositórios</li>
+						</ol>
+					</section>
+					<section>
+						<h3>Formatos</h3>
+						<ol style="width: 80%;">
+							<li>CSV</li>
+							<li>JSON</li>
+							<li>XML</li>
+							<li>Parquet</li>
+						</ol>
+					</section>
+				</section>
+
+				<section id="slide17"  data-background="img/fallingmatrix.gif">
+					<h3>Preciso transformar os dados?</h3>
+				</section>
+
+				<section id="slide18">
+					<ol style="width: 80%;">
+						<li>Data science</li>
+						<li>Python</li>
+						<li>R</li>
+						<li>Machine Learning</li>
+						<li>NLP</li>
+					</ol>				
+				</section>
+
+				<section id="slide19"  data-background="img/m-theory.gif">
+					<h3>Como vou expor esses dados?</h3>
+				</section>
+
+				<section id="slide20">
+					<ol style="width: 80%;">
+						<li>Bibliotecas gráficas</li>
+						<li>PowerBI</li>
+						<li>Tableau</li>
+						<li>Metabase</li>
+						<li>Data Studio</li>
+						<li>Planilhas</li>
+					</ol>				
+				</section>
+
+				<section id="slide21"  data-background="img/neuron.gif">
+					<h3>Tipos de análise</h3>
+				</section>
+
+				<section id="slide22">
+					<section>
+						<h3>Storytelling with data</h3>
+					</section>
+					<section>
+						<h3>Análise Exploratória</h3>
+					</section>
+					<section>
+						<h3>Análise Explanatória</h3>
+					</section>
+				</section>
+
+				<!------------------------------- LAST SLIDES ------------------------------->
+				<section id="slidequote">
+					<blockquote>
+						“Para que as informações sejam valiosas ou significativas, elas devem ser acessíveis, precisas, oportunas, completas, econômicas, flexíveis, confiáveis, relevantes, simples, verificáveis ​​e seguras. Conhecimento é a conscientização e compreensão de um conjunto de informações e maneiras pelas quais as informações podem ser úteis para apoiar uma tarefa específica ou chegar a uma decisão”. <br> McGonigle and Mastrian 2018
+					</blockquote>
+				</section>
+
+				<section id="lastone">
+					<h3>Dúvidas? Anseios? Perplexidades? Sonhos?</h3>
+					<img src="img/questions.gif">
+				</section>
+
+				<section id="contact" data-background="img/retro.jpg">
+					<p>
+						<strong> www.ariedi.com.br</strong>
+					</p>
+				</section>
+
+
+
+			</div>
+		</div>
+		<!------------------------------- END PRESENTATION ------------------------------->
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'concave', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+	</body>
+</html>
