@@ -1,0 +1,346 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<title>A Python Journey</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	
+	<body>
+		<!------------------------------- START PRESENTATION ------------------------------->
+		<div class="reveal">
+			<div class="slides">
+				<!------------------------------- JOÃO ------------------------------->
+
+				<section id="intro" data-background="img/journey.gif">
+					<section>
+						<h1>A Python Journey</h1>
+						<img src="img/python.png" alt="python" style="width: 40%">
+					</section>
+				</section>
+
+				<section id="resume" data-auto-animate data-background="img/neuron.gif">
+					<h2 data-id="code-title">Who am I?</h2>
+					<pre data-id="code-animation"><code class="python" data-trim data-line-numbers>
+						import resume
+
+						name = "joao carlos ariedi filho"
+						college = ["Physics", "Industrial Engineering"]
+						profession = ["principal software engineer", "consultant"]
+						company = ["flugel", "scaffold", "ezdevs", ]
+						hobbies = ["ps4", "guitar", "astronomy", "workout"]
+						dreams = ["fablab", "game studio"]
+						contact = {
+							"linkedin": "joaoariedi",
+							"github": "joaoariedi"
+						}
+						
+					</code></pre>
+				</section>
+
+				<section id="summary" data-auto-animate data-background="img/robots.gif">
+					<h2 data-id="code-title">Summary</h2>
+					<pre data-id="code-animation"><code class="python" data-trim data-line-numbers>
+						from Google import knowledge
+
+						chapter 1 = "why Python?"
+						chapter 2 = "where is it being used?"
+						chapter 3 = "real-world scenarios"
+						chapter 4 = "community"
+						chapter 5 = "lang intro"
+						chapter 6 = ["git", "github"]
+						chapter 7 = ["FastAPI", "Heroku"]
+					</code></pre>
+				</section>
+
+				<section id="why">
+					<h3>Why Python?</h3>
+					<img src="img/obama.gif">
+				</section>
+
+				<section id="whys"  data-auto-animate data-background="img/matrix2.gif">
+					<pre data-id="code-animation"><code class="python" data-trim data-line-numbers>
+						from Google import knowledge
+
+						def tell_me_why():
+							# return Ain't nothin' but a heartache
+							return knowledge("why should I learn Python?")
+
+						result = why_python()
+						print(result)
+
+						### OUTPUT ### 
+						Beginner-Friendly
+						Versatile (web, games, data...)
+						High Demand
+						Supportive Community
+						Fastest-Growing
+					</code></pre>
+				</section>
+
+				<section id="companies" data-background="img/world.gif">
+					<h3>Where is it being used?</h3>
+					<pre data-id="code-animation"><code class="python" data-trim data-line-numbers>
+						import scenarios
+
+						companies = [
+							"Google", "Youtube", "Facebook",
+							"Instagram", "Spotfy", "Quora",
+							"Netflix", "Dropbox", "Reddit",
+						]
+					</code></pre>
+				</section>
+
+				<section id="real_world" data-auto-animate data-background="img/robots.gif">
+					<h3>Real-World Scenarios</h3>
+				</section>
+
+				<section id="areas" data-background="img/python.gif" style="backdrop-filter: blur(10px);">
+					<pre data-id="code-animation"><code class="python" data-trim data-line-numbers>
+						from world import areas
+
+						scenarios = [
+							"data science", "machine learning", 
+							"web development", "computer vision",
+							"nlp", "game development", 
+							"medicine and pharmaceutical", 
+							"biology and bioinformatics", 
+							"neuroscience and psychology", "astronomy", 
+							"robotics", "meteorology", "GUI"
+							]
+					</code></pre>
+				<!-- https://www.freecodecamp.org/news/what-is-python-used-for-10-coding-uses-for-the-python-programming-language/ -->
+				</section>
+
+				<section id="datascience1" data-background="img/matrix3.gif" style="backdrop-filter: blur(10px);">
+					<h2>Data Science</h2>
+					<pre data-id="code-animation"><code class="python" data-trim data-line-numbers>
+						from datascience import pkgs
+
+						NumPy = "package for scientific computing"
+						Scipy = "algorithms for scientific computing"
+						Pandas = "open source data analysis and manipulation"
+						Matplotlib = "animated, and interactive visualizations"
+					</code></pre>
+				</section>
+
+				<section id="datascience2" data-background="img/matrix3.gif" style="backdrop-filter: blur(10px);">
+					<h3>Data Science</h3>
+					<pre data-id="code-animation"><code class="python" data-trim data-line-numbers>
+						from datascience import pkgs
+
+						Seaborn = "visualization library based on matplotlib"
+						ggplot2 = "declaratively creating graphics"
+						Bokeh = "an interactive visualization library"
+						Dash = "original low-code framework for building data apps"
+						Dask = "distributed processing package"
+					</code></pre>
+				</section>
+
+				<section id="machine_learning" data-background="img/ml.gif" style="backdrop-filter: blur(10px);">
+					<h3>Machine Learning</h3>
+					<pre data-id="code-animation"><code class="python" data-trim data-line-numbers>
+						from machine_learning import pkgs
+
+						Scikit = "tools for predictive data analysis"
+						Keras = "neural-network library"
+						PyTorch = "developing and training neural networks"
+					</code></pre>
+				</section>
+				
+				<section id="web_development" data-background="img/webdev.gif" style="backdrop-filter: blur(10px);">
+					<h3>Web Development</h3>
+					<pre data-id="code-animation"><code class="python" data-trim data-line-numbers>
+						from web_development import pkgs
+
+						FastAPI = "async framework for building APIs"
+						Django = "high-level, rapid development, pragmatic design"
+						Flask = "microframework to develop web applications"
+					</code></pre>
+				</section>
+
+				<section id="computer_vision" data-background="img/vision.gif.gif" style="backdrop-filter: blur(10px);">
+					<h3>Computer vision</h3>
+					<pre data-id="code-animation"><code class="python" data-trim data-line-numbers>
+						from computer_vision import pkgs
+
+						OpenCV = "computer vision and machine learning software"
+						scikit-image = "algorithms used for image processing"
+						SciPy = "functions for multidimensional image processing"
+					</code></pre>
+				</section>
+
+				<section id="nlp" data-background="img/nlp.jpeg" style="backdrop-filter: blur(10px);">
+					<h3>Natural Language Processing</h3>
+					<pre data-id="code-animation"><code class="python" data-trim data-line-numbers>
+						from nlp import pkgs
+
+						NaturalLanguageToolkit = "leading platform that can work with human language"
+						spaCy = "preprocess text for Deep Learning, natural language understanding"
+						TextBlob = "processing textual data"
+					</code></pre>
+				</section>
+
+				<section id="game_develop" data-background="img/game.gif" style="backdrop-filter: blur(10px);">
+					<h3>Game Development</h3>
+					<pre data-id="code-animation"><code class="python" data-trim data-line-numbers>
+						from game_develop import pkgs
+
+						pygame = "package for game development"
+						pyglet = "newcomer, based on OpenGL"
+					</code></pre>
+				</section>
+				
+				<section id="med_pharma" data-background="img/med.gif" style="backdrop-filter: blur(10px);">
+					<h3 style="color: black;">Medicine and Pharmacology</h3>
+					<pre data-id="code-animation"><code class="python" data-trim data-line-numbers>
+						from med_pharma import pkgs
+
+						pyGeno = "package developed by Tariq Daouda"
+						MedPy = "medical image processing"
+					</code></pre>
+				</section>
+
+				<section id="bio" data-background="img/bio.gif" style="backdrop-filter: blur(10px);">
+					<h3>Biology and Bioinformatics</h3>
+					<pre data-id="code-animation"><code class="python" data-trim data-line-numbers>
+						from bio import pkgs
+
+						ProDy = "protein structural dynamics analysis"
+						PySB = "build math models of biochemical systems"
+						CommunitySimulator = "simulating microbial population"
+					</code></pre>
+				</section>
+
+				<section id="neuro_psy" data-background="img/neuro.gif" style="backdrop-filter: blur(10px);">
+					<h3>Neuroscience and Psychology</h3>
+					<pre data-id="code-animation"><code class="python" data-trim data-line-numbers>
+						from neuro_psy import pkgs
+
+						PsychoPy = "package for running experiments"
+					</code></pre>
+				</section>
+
+				<section id="astro" data-background="img/astro.gif" style="backdrop-filter: blur(10px);">
+					<h3 style="color: black;">Astronomy</h3>
+					<pre data-id="code-animation"><code class="python" data-trim data-line-numbers>
+						from astro import pkgs
+
+						Astropy = "provide commonly-used astronomy tools"
+						SunPy = "solar data analysis environment"
+						SpacePy = "basic data analysis, modeling and visualization"
+					</code></pre>
+				</section>
+
+				<section id="community" data-background="img/sky.gif">
+					<h1 style="color: rgb(113, 0, 158);">Community</h1>
+				</section>
+
+				<section id="links" data-background="img/commu.gif" style="backdrop-filter: blur(10px);">
+					<h3>Find us</h3>
+					<pre data-id="code-animation"><code class="python" data-trim data-line-numbers>
+						from pythonic import links
+
+						world = "https://www.python.org/"
+						brazil = "https://python.org.br/"
+						bauru = "https://grupy-bauru.herokuapp.com/"
+					</code></pre>
+				</section>
+
+				<section id="lastone">
+					<h3>Dúvidas? Anseios? Perplexidades? Sonhos?</h3>
+					<img src="img/questions.gif">
+				</section>
+
+				<!------------------------------- Day 2 ------------------------------->
+
+				<section id="intro2" data-background="img/comp.gif" style="backdrop-filter: blur(20px);">
+					<h3>Language introduction</h3>
+					<h4>Day 2</h4>
+				</section>
+
+				<section id="phrase">
+					<p style="background: rgb(0, 0, 0);">What is the most important thing that you need to know to learn almost everything?</p>
+					<img src="img/dog.gif">
+				</section>
+
+				<section id="summary2" data-auto-animate data-background="img/robots.gif">
+					<h2 data-id="code-title">Summary</h2>
+					<pre data-id="code-animation"><code class="python" data-trim data-line-numbers>
+						from Google import knowledge
+
+						chapter 1 = "why Python?"
+						chapter 2 = "setting up the environment"
+						chapter 3 = {
+							"primitives": [ 
+							"bool", "integer", "float", "string"
+							],
+							"collections": [
+							"list", "tuple", "dict", "set"
+							]
+						}
+						chapter 4 = "loopings"
+						chapter 5 = "decision making"
+						chapter 6 = "functions"
+						chapter 7 = "object oriented programming"
+						chapter 8 = "web development"
+						chapter 9 = ["git", "github"]
+						chapter x = ["FastAPI", "Heroku"]
+					</code></pre>
+				</section>
+
+				<section id="handson">
+					<h3>Let's do some code</h3>
+					<img src="img/cat.gif">
+				</section>
+
+				<!------------------------------- LAST SLIDES ------------------------------->
+
+				<section id="questions">
+					<h3>Dúvidas? Anseios? Perplexidades? Sonhos?</h3>
+					<img src="img/questions.gif">
+				</section>
+			</div>
+		</div>
+		<!------------------------------- END PRESENTATION ------------------------------->
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+	</body>
+</html>
