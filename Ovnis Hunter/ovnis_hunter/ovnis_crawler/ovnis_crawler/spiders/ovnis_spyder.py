@@ -2,6 +2,7 @@ import scrapy
 
 
 class Report(scrapy.Item):
+    link = scrapy.Field()
     date = scrapy.Field()
     posted = scrapy.Field()
     city = scrapy.Field()
@@ -34,10 +35,11 @@ class OVNIsSpider(scrapy.Spider):
         tbody = table.xpath("tbody")
         rows = tbody.xpath("tr")
         for row in rows:
+            report['link'] = self.BASE_URL + "/" + row.xpath("td[1]/a//@href").get()
             report['date'] = row.xpath("td[1]/a//text()").get()
             report['city'] = row.xpath("td[2]//text()").get()
             report['state'] = row.xpath("td[3]//text()").get()
-            report['country'] = row.xpath("td[4]/font//text()").get()
+            report['country'] = row.xpath("td[4]//text()").get()
             report['shape'] = row.xpath("td[5]//text()").get()
             report['duration'] = row.xpath("td[6]//text()").get()
             report['summary'] = row.xpath("td[7]//text()").get()
