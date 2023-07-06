@@ -1,24 +1,25 @@
 import scrapy
 
+
 class Report(scrapy.Item):
-    pagina = scrapy.Field()
-    occured = scrapy.Field()
+    date = scrapy.Field()
     posted = scrapy.Field()
-    city  = scrapy.Field()
+    city = scrapy.Field()
     state = scrapy.Field()
+    country = scrapy.Field()
     shape = scrapy.Field()
     duration = scrapy.Field()
     summary = scrapy.Field()
+    images = scrapy.Field()
 
     
 class OVNIsSpider(scrapy.Spider):
     name = "ovnis"
 
-    BASE_URL = 'http://www.nuforc.org/webreports/'
+    BASE_URL = 'https://www.nuforc.org/webreports/'
 
     def start_requests(self):
-        yield scrapy.Request('http://www.nuforc.org/webreports/ndxevent.html', callback = self.parse_links)
-
+        yield scrapy.Request(f'{self.BASE_URL}ndxevent.html', callback=self.parse_links)
 
     def parse_links(self, response):
         links = response.xpath("//a/@href").getall()
@@ -33,15 +34,14 @@ class OVNIsSpider(scrapy.Spider):
         tbody = table.xpath("tbody")
         rows = tbody.xpath("tr")
         for row in rows:
-            report['occured'] = row.xpath("td[1]/font//text()").get()
-            report['city'] = row.xpath("td[2]/font//text()").get()
-            report['state'] = row.xpath("td[3]/font//text()").get()
-            report['shape'] = row.xpath("td[4]/font//text()").get()
-            report['duration'] = row.xpath("td[5]/font//text()").get()
-            report['summary'] = row.xpath("td[6]/font//text()").get()
-            report['posted'] = row.xpath("td[7]/font//text()").get()
+            report['date'] = row.xpath("td[1]/a//text()").get()
+            report['city'] = row.xpath("td[2]//text()").get()
+            report['state'] = row.xpath("td[3]//text()").get()
+            report['country'] = row.xpath("td[4]/font//text()").get()
+            report['shape'] = row.xpath("td[5]//text()").get()
+            report['duration'] = row.xpath("td[6]//text()").get()
+            report['summary'] = row.xpath("td[7]//text()").get()
+            report['posted'] = row.xpath("td[8]//text()").get()
+            report['images'] = row.xpath("td[9]//text()").get()
 
             yield report
-        
-
-
