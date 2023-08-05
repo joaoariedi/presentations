@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<title>Digital Revolution</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	
+	<body>
+		<!------------------------------- START PRESENTATION ------------------------------->
+		<div class="reveal">
+			<div class="slides">
+
+				<!------------------------------- JOÃO ------------------------------->
+
+				<section id="slide1" data-background="img/networksd.gif">
+					<h1>Digital Revolution</h1>
+				</section>
+
+				<section id="slide2">
+					<h2>Summary</h2>
+					<ol style="width: 80%;">
+						<li>Who am I?</li>
+						<li>Abstraction</li>
+						<li>The future</li>
+						<li>What we actually do</li>
+						<li>Coding</li>
+						<li>Questions</li>
+					</ol>
+				</section>
+
+				<section data-auto-animate>
+					<h2 data-id="code-title">Who am I?</h2>
+					<pre data-id="code-animation"><code class="python" data-trim data-line-numbers>
+						import resume
+
+						name = "joao carlos ariedi filho"
+						college = ["Physics", "Industrial Engineering"]
+						profession = ["techlead", "software engineer"]
+						company = ["scaffold", "ezdevs", "flugel"]
+						hobbies = ["ps4", "guitar", "astronomy", "workout"]
+						dreams = ["fablab", "game studio"]
+						
+					</code></pre>
+				</section>
+
+				<section data-auto-animate>
+					<h2 data-id="code-title">Abstraction</h2>
+					<pre data-id="code-animation"><code class="python" data-trim data-line-numbers>
+						import meaning
+
+						def define(word):
+							output = meaning(word)
+							return output
+
+						result = define(abstraction)
+						print(result)
+
+						### OUTPUT ### 
+						# the process of considering something 
+						# independently of its associations,
+						# attributes, or concrete accompaniments.
+						
+					</code></pre>
+				</section>
+
+				<section id="bonus">
+					<img src="img/ada.jpg" style="width: 30%">
+					<p>Ada Augusta King, Condessa de Lovelace <br>(1815 - 1852)</p>
+				</section>
+
+				<section id="slide5">
+					<h2>Nature</h2>
+					<table>
+						<thead>
+							<tr>
+								<th>V</th>
+								<th>I</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>3</td>
+								<td>0.1</td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>0.2</td>
+							</tr>
+							<tr>
+								<td>9</td>
+								<td>0.3</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+
+				<section id="physcs">
+					<h2>Physics Laws</h2>
+					<p>V = RI</p>
+					<p>Maxwell's equations</p>
+					<img src="img/max.jpeg" style="width: 40%">
+				</section>
+
+				<section id="lca">
+					<h2>Lamp Circuit Abstraction</h2>
+					<img src="img/lamp.webp">
+
+				</section>
+
+				<section id="lca">
+					<h2>Amplifier Abstraction</h2>
+					<img src="img/amplifier.png">
+
+				</section>
+
+				<section id="dig">
+					<h2>Digital</h2>
+					<p>Inverters and Combination Gates</p>
+					<img src="img/gate.png">
+
+				</section>
+
+				<section id="dig">
+					<h2>Digital</h2>
+					<p>Combination Logic</p>
+					<img src="img/comb.jpg">
+
+				</section>
+
+				<section id="dig">
+					<h2>Clock</h2>
+					<img src="img/clock.png">
+
+				</section>
+
+
+				<section id="dig">
+					<h2>Instruction Set Abstraction</h2>
+					<p>x86</p>
+					<img src="img/processor.jpg" style="width: 50%">
+
+				</section>
+
+				<section data-auto-animate>
+					<h2 data-id="code-title">Language Abstraction</h2>
+					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers="|4,8-11|17|22-24"><script type="text/template">
+						import React, { useState } from 'react';
+
+						function Example() {
+						  const [count, setCount] = useState(0);
+
+						  return (
+						    <div>
+						      <p>You clicked {count} times</p>
+						      <button onClick={() => setCount(count + 1)}>
+						        Click me
+						      </button>
+						    </div>
+						  );
+						}
+
+						function SecondExample() {
+						  const [count, setCount] = useState(0);
+
+						  return (
+						    <div>
+						      <p>You clicked {count} times</p>
+						      <button onClick={() => setCount(count + 1)}>
+						        Click me
+						      </button>
+						    </div>
+						  );
+						}
+					</script></code></pre>
+				</section>
+
+				<section data-auto-animate>
+					<h2 data-id="code-title">Software Systems Abstraction</h2>
+					<pre data-id="code-animation"><code class="python" data-trim data-line-numbers>
+						import os
+
+						print(os.list_types)
+
+						### OUTPUT ### 
+						["linux", "w..."]
+						###
+						
+					</code></pre>
+				</section>
+
+				<section data-auto-animate>
+					<h2 data-id="code-title">What can we do?</h2>
+					<pre data-id="code-animation"><code class="python" data-trim data-line-numbers>
+						import os
+
+						print(os.useful_things)
+
+						### OUTPUT ### 
+						["video games", "Spaceships", ...]
+						###
+						
+					</code></pre>
+				</section>
+
+				<section id="dig">
+					<h2>Future</h2>
+					<p>Personal Fabrication</p>
+					<img src="img/fablab.png" style="width: 70%">
+
+				</section>
+
+
+
+
+				<!------------------------------- LAST SLIDES ------------------------------->
+
+				<section id="lastone">
+					<h3>Dúvidas? Anseios? Perplexidades? Sonhos?</h3>
+					<img src="img/questions.gif">
+				</section>
+
+				<section id="lastone">
+					<p>https://profituro.liderajovem.org/loja/9-profituro-feira-de-profissoes</p>
+				</section>
+
+			</div>
+		</div>
+		<!------------------------------- END PRESENTATION ------------------------------->
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+	</body>
+</html>

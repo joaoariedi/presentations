@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "ovnis hunter"
+version = "0.1.0"
+description = ""
+authors = ["joaoariedi <joaoariedi@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+jupyterlab = "^4.0.2"
+pandas = "^2.0.3"
+numpy = "^1.25.0"
+wordcloud = "^1.9.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
