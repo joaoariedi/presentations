@@ -10,32 +10,58 @@
 	text-shadow: 3px 3px #313131;
 }
 
-#purpose section {
-	backdrop-filter: blur(10px);
+#l1 *,
+#l2 *,
+#l3 *,
+#l4 * {
+	background-color: rgb(0,0,0, 0.7);
 }
 
-#alienation section {
-	backdrop-filter: blur(10px);
+#p1 *, 
+#p2 {
+	background-color: rgb(0,0,0, 0.7);
 }
 
-#observation section {
-	backdrop-filter: blur(10px);
-
+#a1 *, 
+#a2 *, 
+#a3 *, 
+#a4, 
+#a5 *, 
+#a6 * {
+	background-color: rgb(0,0,0, 0.7);
 }
 
-#needs section {
-	backdrop-filter: blur(10px);
+#o1, 
+#o2 {
+	background-color: rgb(0,0,0, 0.7);
 }
 
-#feeling section {
-	backdrop-filter: blur(10px);
+#f1, 
+#f2 {
+	background-color: rgb(0,0,0, 0.7);
 }
 
-#request section {
-	backdrop-filter: blur(10px);
+#n1 *, 
+#n2 {
+	background-color: rgb(0,0,0, 0.7);
 }
 
-#empathy section {
-	backdrop-filter: blur(10px);
+#r1, 
+#r2 {
+	background-color: rgb(0,0,0, 0.7);
 }
 
+#e1, 
+#e2, 
+#e3 {
+	background-color: rgb(0,0,0, 0.7);
+}
+
+.emphasis {
+	color: greenyellow;
+}
+
+.emphasis-bold {
+	font-weight: bold;
+	color: goldenrod;
+}
