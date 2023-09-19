@@ -1,0 +1,41 @@
+/*********************************************
+ * SLIDES
+ *********************************************/
+
+#intro {
+	backdrop-filter: blur(10px);
+}
+
+#intro * {
+	text-shadow: 3px 3px #313131;
+}
+
+#purpose section {
+	backdrop-filter: blur(10px);
+}
+
+#alienation section {
+	backdrop-filter: blur(10px);
+}
+
+#observation section {
+	backdrop-filter: blur(10px);
+
+}
+
+#needs section {
+	backdrop-filter: blur(10px);
+}
+
+#feeling section {
+	backdrop-filter: blur(10px);
+}
+
+#request section {
+	backdrop-filter: blur(10px);
+}
+
+#empathy section {
+	backdrop-filter: blur(10px);
+}
+
