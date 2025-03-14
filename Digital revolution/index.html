@@ -28,63 +28,70 @@
 
 				<!------------------------------- JOÃO ------------------------------->
 
-				<section id="slide1" data-background="img/networksd.gif">
+				<section id="slide1" data-background="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWxwMndydmRpZ2tuZGVxbDFiMGk3YW5pbXM0bW1uMTBwaG8zaXUyNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/doXBzUFJRxpaUbuaqz/giphy.gif">
 					<h1>Digital Revolution</h1>
 				</section>
 
-				<section id="slide2">
+				<section id="slide2" data-background="img/neuron.gif">
 					<h2>Summary</h2>
 					<ol style="width: 80%;">
 						<li>Who am I?</li>
-						<li>Abstraction</li>
-						<li>The future</li>
+						<li>Abstract to make easier</li>
+						<li>The bleeding edge technology</li>
 						<li>What we actually do</li>
-						<li>Coding</li>
 						<li>Questions</li>
 					</ol>
 				</section>
 
-				<section data-auto-animate>
+				<section data-auto-animate data-background="img/matrix2.gif">
 					<h2 data-id="code-title">Who am I?</h2>
-					<pre data-id="code-animation"><code class="python" data-trim data-line-numbers>
-						import resume
+					<pre data-id="code-animation"><code class="python" data-line-numbers>import resume
 
-						name = "joao carlos ariedi filho"
-						college = ["Physics", "Industrial Engineering"]
-						profession = ["techlead", "software engineer"]
-						company = ["scaffold", "ezdevs", "flugel"]
-						hobbies = ["ps4", "guitar", "astronomy", "workout"]
-						dreams = ["fablab", "game studio"]
-						
+name = "joao ariedi"
+college = ["physics", "industrial engineering", "cybernetic defense"]
+profession = ["generalistic programmer"]
+company = ["metabaseQ", "safesphere", "scaffold"]
+hobbies = ["mtb", "guitar", "steamdeck", "networks"]
+goals = ["fablab", "retirement"]
+pets = ["tiffany", "luna"]
 					</code></pre>
 				</section>
 
-				<section data-auto-animate>
-					<h2 data-id="code-title">Abstraction</h2>
-					<pre data-id="code-animation"><code class="python" data-trim data-line-numbers>
-						import meaning
-
-						def define(word):
-							output = meaning(word)
-							return output
-
-						result = define(abstraction)
-						print(result)
-
-						### OUTPUT ### 
-						# the process of considering something 
-						# independently of its associations,
-						# attributes, or concrete accompaniments.
-						
-					</code></pre>
-				</section>
-
-				<section id="bonus">
+   			<section id="ada">
 					<img src="img/ada.jpg" style="width: 30%">
+					<img src="img/AnalyticalMachine_Babbage_London.jpg" style="width: 45%">
 					<p>Ada Augusta King, Condessa de Lovelace <br>(1815 - 1852)</p>
 				</section>
 
-				<section id="slide5">
+
+				<section id="turing">
+					<img src="img/turing.webp" style="width: 51%">
+					<img src="img/turing_machine.jpg" style="width: 40%">
+					<p>Alan Turing <br>(1912 - 1954)</p>
+				</section>
+
+
+				<section id="neumann">
+					<img src="img/motherboard.jpg" style="width: 52%">
+					<img src="img/neumannn.png" style="width: 35%">
+					<p>John Von Neumann <br>(1903 - 1957)</p>
+				</section>
+
+				<section data-auto-animate data-background="img/networks.gif">
+					<h2 data-id="code-title">Abstraction</h2>
+					<pre data-id="code-animation"><code class="python" data-line-numbers>import meaning as mng
+
+result = mng("abstraction")
+print(result)
+
+### OUTPUT ### 
+# the process of considering something 
+# independently of its associations,
+# attributes, or concrete details.
+					</code></pre>
+				</section>
+
+				<section id="slide5" data-background="img/eletricity.jpg">
 					<h2>Nature</h2>
 					<table>
 						<thead>
@@ -113,9 +120,8 @@
 
 				<section id="physcs">
 					<h2>Physics Laws</h2>
-					<p>V = RI</p>
 					<p>Maxwell's equations</p>
-					<img src="img/max.jpeg" style="width: 40%">
+					<img src="img/maxwell.jpg" style="width: 40%">
 				</section>
 
 				<section id="lca">
@@ -160,35 +166,29 @@
 
 				<section data-auto-animate>
 					<h2 data-id="code-title">Language Abstraction</h2>
-					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers="|4,8-11|17|22-24"><script type="text/template">
-						import React, { useState } from 'react';
+					<pre data-id="code-animation">
+            <code class="c" data-trim data-line-numbers>
+static int arp_accept(struct in_device *in_dev, __be32 sip)
+{
+	struct net *net = dev_net(in_dev->dev);
+	int scope = RT_SCOPE_LINK;
 
-						function Example() {
-						  const [count, setCount] = useState(0);
-
-						  return (
-						    <div>
-						      <p>You clicked {count} times</p>
-						      <button onClick={() => setCount(count + 1)}>
-						        Click me
-						      </button>
-						    </div>
-						  );
-						}
-
-						function SecondExample() {
-						  const [count, setCount] = useState(0);
-
-						  return (
-						    <div>
-						      <p>You clicked {count} times</p>
-						      <button onClick={() => setCount(count + 1)}>
-						        Click me
-						      </button>
-						    </div>
-						  );
-						}
-					</script></code></pre>
+	switch (IN_DEV_ARP_ACCEPT(in_dev)) {
+	case 0: /* Don't create new entries from garp */
+		return 0;
+	case 1: /* Create new entries from garp */
+		return 1;
+	case 2: /* Create a neighbor in the arp table only if sip
+		 * is in the same subnet as an address configured
+		 * on the interface that received the garp message
+		 */
+		return !!inet_confirm_addr(net, in_dev, sip, 0, scope);
+	default:
+		return 0;
+	}
+}
+            </code>
+          </pre>
 				</section>
 
 				<section data-auto-animate>
@@ -196,7 +196,7 @@
 					<pre data-id="code-animation"><code class="python" data-trim data-line-numbers>
 						import os
 
-						print(os.list_types)
+						print(os.list)
 
 						### OUTPUT ### 
 						["linux", "w..."]
@@ -207,23 +207,29 @@
 
 				<section data-auto-animate>
 					<h2 data-id="code-title">What can we do?</h2>
-					<pre data-id="code-animation"><code class="python" data-trim data-line-numbers>
-						import os
-
-						print(os.useful_things)
-
-						### OUTPUT ### 
-						["video games", "Spaceships", ...]
-						###
-						
-					</code></pre>
 				</section>
 
-				<section id="dig">
-					<h2>Future</h2>
+				<section data-auto-animate>
+					<img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExendrcXlhcHo1d29qeXdiYnN0aWd0cm9oeHpjajQxM25weDlydTRwNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9xphYvKJ3qYlqUdbMh/giphy.gif" style="width: 50%">
+					<img src="img/spacex.webp" style="width: 50%">
+				</section>
+
+			<section id="dig">
+					<p>AI</p>
+					<img src="img/ai_diagram.jpg" style="width: 70%">
+			</section>
+
+			<section id="dig">
 					<p>Personal Fabrication</p>
 					<img src="img/fablab.png" style="width: 70%">
+			</section>
 
+			<section id="dig">
+					<p>Molecular Machines</p>
+          <video data-autoplay
+            src="img/diffuse.mp4"
+            style="width: 70%"
+          ></video>
 				</section>
 
 
@@ -234,10 +240,6 @@
 				<section id="lastone">
 					<h3>Dúvidas? Anseios? Perplexidades? Sonhos?</h3>
 					<img src="img/questions.gif">
-				</section>
-
-				<section id="lastone">
-					<p>https://profituro.liderajovem.org/loja/9-profituro-feira-de-profissoes</p>
 				</section>
 
 			</div>
